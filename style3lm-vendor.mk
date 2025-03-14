@@ -19,6 +19,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/style3lm/proprietary/vendor/etc/camera/iqm/fc4_awb.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/iqm/fc4_awb.dlc \
     vendor/lge/style3lm/proprietary/vendor/etc/camera/iqm/gender_detection_graph.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/iqm/gender_detection_graph.dlc \
     vendor/lge/style3lm/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc \
+    vendor/lge/style3lm/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service-cxd22xx.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service-cxd22xx.rc \
+    vendor/lge/style3lm/proprietary/vendor/etc/init/vendor.lge.hardware.powerhint.rescontrol@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.powerhint.rescontrol@2.0-service.rc \
     vendor/lge/style3lm/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/lge/style3lm/proprietary/vendor/etc/qdcm_calib_data_Dual_nt35597_cmd_mode_dsi_truly_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Dual_nt35597_cmd_mode_dsi_truly_panel_without_DSC.xml \
     vendor/lge/style3lm/proprietary/vendor/etc/qdcm_calib_data_Dual_nt35597_video_mode_dsi_truly_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Dual_nt35597_video_mode_dsi_truly_panel_without_DSC.xml \
@@ -74,10 +76,14 @@ PRODUCT_COPY_FILES += \
     vendor/lge/style3lm/proprietary/vendor/etc/wifi/bdwlan_ch0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bdwlan_ch0.bin \
     vendor/lge/style3lm/proprietary/vendor/etc/wifi/bdwlan_ch1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bdwlan_ch1.bin \
     vendor/lge/style3lm/proprietary/vendor/etc/wifi/icudt53l.dat:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/icudt53l.dat \
-    vendor/lge/style3lm/proprietary/vendor/ffu/FFUMICRON_MT128GASAO4U21_0105.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUMICRON_MT128GASAO4U21_0105.bin \
     vendor/lge/style3lm/proprietary/vendor/ffu/FFUMICRON_MT128GASAO4U21_0107.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUMICRON_MT128GASAO4U21_0107.bin \
+    vendor/lge/style3lm/proprietary/vendor/ffu/FFUMICRON_MT128GASAO4U21_0108.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUMICRON_MT128GASAO4U21_0108.bin \
     vendor/lge/style3lm/proprietary/vendor/ffu/FFUSAMSUNG_KLUDG4U1EA-B0C1_0500.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUSAMSUNG_KLUDG4U1EA-B0C1_0500.bin \
+    vendor/lge/style3lm/proprietary/vendor/ffu/FFUSAMSUNG_KLUDG4UHDC-B0E1_0200.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUSAMSUNG_KLUDG4UHDC-B0E1_0200.bin \
     vendor/lge/style3lm/proprietary/vendor/ffu/FFUSAMSUNG_KLUDG8V1EE-B0C1_0400.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUSAMSUNG_KLUDG8V1EE-B0C1_0400.bin \
+    vendor/lge/style3lm/proprietary/vendor/ffu/FFUSAMSUNG_KLUEG8UHDC-B0E1_0200.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUSAMSUNG_KLUEG8UHDC-B0E1_0200.bin \
+    vendor/lge/style3lm/proprietary/vendor/ffu/FFUSAMSUNG_KM2V8001CM-B707_2100.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUSAMSUNG_KM2V8001CM-B707_2100.bin \
+    vendor/lge/style3lm/proprietary/vendor/ffu/FFUSAMSUNG_KM8V8001JM-B813_2100.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUSAMSUNG_KM8V8001JM-B813_2100.bin \
     vendor/lge/style3lm/proprietary/vendor/ffu/FFUSKHYNIX_H28S7Q302BMR_A002.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUSKHYNIX_H28S7Q302BMR_A002.bin \
     vendor/lge/style3lm/proprietary/vendor/ffu/FFUSKHYNIX_H28U62301AMR_D003.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUSKHYNIX_H28U62301AMR_D003.bin \
     vendor/lge/style3lm/proprietary/vendor/ffu/FFUSKHYNIX_H28U72301CMR_0004.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUSKHYNIX_H28U72301CMR_0004.bin \
@@ -85,12 +91,13 @@ PRODUCT_COPY_FILES += \
     vendor/lge/style3lm/proprietary/vendor/ffu/FFUTOSHIBA_THGAF8G9T43BAIRB_0300.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUTOSHIBA_THGAF8G9T43BAIRB_0300.bin \
     vendor/lge/style3lm/proprietary/vendor/ffu/FFUWDC_SDINDDH4-128G_1308.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUWDC_SDINDDH4-128G_1308.bin \
     vendor/lge/style3lm/proprietary/vendor/ffu/FFUWDC_SDINDDH4-256G_1308.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUWDC_SDINDDH4-256G_1308.bin \
-    vendor/lge/style3lm/proprietary/vendor/ffu/FFUWDC_SDINEDK4-128G_1082.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUWDC_SDINEDK4-128G_1082.bin \
-    vendor/lge/style3lm/proprietary/vendor/ffu/FFUWDC_SDINEDK4-256G_1082.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUWDC_SDINEDK4-256G_1082.bin \
+    vendor/lge/style3lm/proprietary/vendor/ffu/FFUWDC_SDINEDK4-128G_1094.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUWDC_SDINEDK4-128G_1094.bin \
+    vendor/lge/style3lm/proprietary/vendor/ffu/FFUWDC_SDINEDK4-256G_1088.bin:$(TARGET_COPY_OUT_VENDOR)/ffu/FFUWDC_SDINEDK4-256G_1088.bin \
     vendor/lge/style3lm/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/lge/style3lm/proprietary/vendor/firmware/Tfa9872.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/Tfa9872.cnt \
     vendor/lge/style3lm/proprietary/vendor/firmware/crbtfw21.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/crbtfw21.tlv \
     vendor/lge/style3lm/proprietary/vendor/firmware/crnv21.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crnv21.bin \
+    vendor/lge/style3lm/proprietary/vendor/firmware/cxd225x_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cxd225x_firmware.bin \
     vendor/lge/style3lm/proprietary/vendor/lib/camera/com.qti.sensormodule.s5kgm2.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.s5kgm2.bin \
     vendor/lge/style3lm/proprietary/vendor/lib/camera/com.qti.sensormodule.sl556.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.sl556.bin \
     vendor/lge/style3lm/proprietary/vendor/lib/camera/com.qti.sensormodule.sl846.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.sl846.bin \
@@ -122,7 +129,10 @@ PRODUCT_PACKAGES += \
     libsymphony-1.1.4 \
     libsymphony-cpu \
     libsymphonypower-1.1.4 \
+    libvendor_rescontrol \
     sensors.ssc \
+    vendor.lge.hardware.powerhint.rescontrol@2.0-common \
+    vendor.lge.hardware.powerhint.rescontrol@2.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
     com.qti.sensor.s5kgm2 \
     com.qti.sensor.sl556 \
@@ -245,7 +255,10 @@ PRODUCT_PACKAGES += \
     fingerprint.sdm845 \
     libRbsFlow \
     libets_teeclient_v2 \
+    libfpsph \
+    libnanopb \
     libsensor_lge_cal \
+    libsns_api \
     AlacDecoderModule.so \
     ApeDecoderModule.so \
     AudioContextDetection.so \
@@ -269,7 +282,6 @@ PRODUCT_PACKAGES += \
     libVC1DecDsp_skel \
     libapps_mem_heap \
     libcamera_nn_skel \
-    libcvpdsp_skel \
     libdspCV_skel \
     libdsp_streamer_add_constant \
     libdsp_streamer_binning \
@@ -277,7 +289,6 @@ PRODUCT_PACKAGES += \
     libfastcvadsp \
     libfastcvdsp_skel \
     libhexagon_nn_skel \
-    libscveBlobDescriptor_skel \
     libscveObjectSegmentation_skel \
     libscveT2T_skel \
     libsns_device_mode_skel \
@@ -287,6 +298,13 @@ PRODUCT_PACKAGES += \
     libsysmondomain_skel \
     mmecns_module.so \
     chre \
+    android.hardware.nfc@1.2-service-cxd22xx \
+    vendor.lge.hardware.powerhint.rescontrol@2.0-service \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
     sensors.qti \
     sscrpcd
+
+PRODUCT_PACKAGES += \
+    vendor_firmware_wlan_qca_cld_bdwlan_bin \
+    vendor_firmware_wlan_qca_cld_bdwlan_ch0_bin \
+    vendor_firmware_wlan_qca_cld_bdwlan_ch1_bin

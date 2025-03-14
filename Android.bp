@@ -22,7 +22,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libhidlbase",
-                "libhidltransport",
                 "libutils",
                 "liblog",
                 "libcutils",
@@ -42,7 +41,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libhidlbase",
-                "libhidltransport",
                 "libutils",
                 "liblog",
                 "libcutils",
@@ -205,12 +203,13 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libsensorcal.so",
             ],
             shared_libs: [
-                "libutils",
-                "libprotobuf-cpp-full-vendorcompat",
-                "libsensorslog",
-                "libcutils",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
                 "libssc",
+                "libutils",
+                "libcutils",
+                "libsensorslog",
+                "libsnsapi",
                 "libc++",
                 "libc",
                 "libm",
@@ -222,12 +221,13 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsensorcal.so",
             ],
             shared_libs: [
-                "libutils",
-                "libprotobuf-cpp-full-vendorcompat",
-                "libsensorslog",
-                "libcutils",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
                 "libssc",
+                "libutils",
+                "libcutils",
+                "libsensorslog",
+                "libsnsapi",
                 "libc++",
                 "libc",
                 "libm",
@@ -291,10 +291,10 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libsns_fastRPC_util",
                 "liblog",
+                "libc",
                 "libutils",
                 "libcutils",
                 "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -306,10 +306,10 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libsns_fastRPC_util",
                 "liblog",
+                "libc",
                 "libutils",
                 "libcutils",
                 "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -333,10 +333,10 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
+                "libc",
                 "libutils",
                 "libcutils",
                 "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -347,10 +347,10 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
+                "libc",
                 "libutils",
                 "libcutils",
                 "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -375,10 +375,10 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libsns_fastRPC_util",
                 "liblog",
+                "libc",
                 "libutils",
                 "libcutils",
                 "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -390,10 +390,10 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libsns_fastRPC_util",
                 "liblog",
+                "libc",
                 "libutils",
                 "libcutils",
                 "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -416,12 +416,12 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libsnsapi.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libcutils",
+                "libutils",
                 "libqmi_common_so",
                 "libqmi_cci",
                 "libqmi_encdec",
-                "libcutils",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -433,12 +433,12 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsnsapi.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libcutils",
+                "libutils",
                 "libqmi_common_so",
                 "libqmi_cci",
                 "libqmi_encdec",
-                "libcutils",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -463,13 +463,14 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libsnsdiaglog.so",
             ],
             shared_libs: [
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
-                "libprotobuf-cpp-full-vendorcompat",
                 "libdiag",
-                "libssc",
                 "libsensorslog",
                 "libutils",
                 "libcutils",
+                "libssc",
+                "libsnsapi",
                 "libc++",
                 "libc",
                 "libm",
@@ -481,13 +482,14 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsnsdiaglog.so",
             ],
             shared_libs: [
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
-                "libprotobuf-cpp-full-vendorcompat",
                 "libdiag",
-                "libssc",
                 "libsensorslog",
                 "libutils",
                 "libcutils",
+                "libssc",
+                "libsnsapi",
                 "libc++",
                 "libc",
                 "libm",
@@ -512,14 +514,15 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libssc.so",
             ],
             shared_libs: [
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
                 "libsensorslog",
-                "libprotobuf-cpp-full-vendorcompat",
+                "libcutils",
+                "libutils",
                 "libqmi_common_so",
                 "libqmi_cci",
                 "libqmi_encdec",
-                "libcutils",
-                "libutils",
+                "libsnsapi",
                 "libc++",
                 "libc",
                 "libm",
@@ -531,14 +534,15 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libssc.so",
             ],
             shared_libs: [
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
                 "libsensorslog",
-                "libprotobuf-cpp-full-vendorcompat",
+                "libcutils",
+                "libutils",
                 "libqmi_common_so",
                 "libqmi_cci",
                 "libqmi_encdec",
-                "libcutils",
-                "libutils",
+                "libsnsapi",
                 "libc++",
                 "libc",
                 "libm",
@@ -709,6 +713,51 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libvendor_rescontrol",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libvendor_rescontrol.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvendor_rescontrol.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "sensors.ssc",
     owner: "lge",
     strip: {
@@ -720,14 +769,23 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/sensors.ssc.so",
             ],
             shared_libs: [
-                "libssc",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
-                "libcutils",
-                "libsensorslog",
-                "libprotobuf-cpp-full-vendorcompat",
-                "libutils",
+                "libsnsapi",
+                "libssc",
                 "libsnsdiaglog",
+                "libutils",
+                "libcutils",
+                "libsns_fastRPC_util",
+                "libsensorslog",
                 "libhardware",
+                "libhidlbase",
+                "android.hardware.sensors@2.0",
+                "android.hardware.sensors@2.0-ScopedWakelock",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@2.0",
+                "vendor.qti.hardware.display.mapper@3.0",
+                "vendor.qti.hardware.display.mapper@1.1",
                 "libc++",
                 "libc",
                 "libm",
@@ -739,14 +797,121 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/sensors.ssc.so",
             ],
             shared_libs: [
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "liblog",
+                "libsnsapi",
                 "libssc",
+                "libsnsdiaglog",
+                "libutils",
+                "libcutils",
+                "libsns_fastRPC_util",
+                "libsensorslog",
+                "libhardware",
+                "libhidlbase",
+                "android.hardware.sensors@2.0",
+                "android.hardware.sensors@2.0-ScopedWakelock",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@2.0",
+                "vendor.qti.hardware.display.mapper@3.0",
+                "vendor.qti.hardware.display.mapper@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.lge.hardware.powerhint.rescontrol@2.0-common",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.lge.hardware.powerhint.rescontrol@2.0-common.so",
+            ],
+            shared_libs: [
                 "liblog",
                 "libcutils",
-                "libsensorslog",
-                "libprotobuf-cpp-full-vendorcompat",
+                "libbase",
                 "libutils",
-                "libsnsdiaglog",
                 "libhardware",
+                "libhidlbase",
+                "libtinyxml2",
+                "android.hardware.power@1.0",
+                "vendor.lge.hardware.powerhint.rescontrol@2.0",
+                "libvendor_rescontrol",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.lge.hardware.powerhint.rescontrol@2.0-common.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhardware",
+                "libhidlbase",
+                "libtinyxml2",
+                "android.hardware.power@1.0",
+                "vendor.lge.hardware.powerhint.rescontrol@2.0",
+                "libvendor_rescontrol",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.lge.hardware.powerhint.rescontrol@2.0",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.lge.hardware.powerhint.rescontrol@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.lge.hardware.powerhint.rescontrol@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -772,8 +937,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -789,8 +952,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -1518,7 +1679,7 @@ cc_prebuilt_library_shared {
                 "libqmi_common_so",
                 "libqmi_cci",
                 "libqmi_encdec",
-                "libprotobuf-cpp-full-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libhardware",
                 "libcamera_metadata",
                 "libcom.qti.chinodeutils",
@@ -1556,7 +1717,7 @@ cc_prebuilt_library_shared {
                 "libqmi_common_so",
                 "libqmi_cci",
                 "libqmi_encdec",
-                "libprotobuf-cpp-full-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libhardware",
                 "libcamera_metadata",
                 "libcom.qti.chinodeutils",
@@ -3368,7 +3529,7 @@ cc_prebuilt_library_shared {
                 "libqmi_common_so",
                 "libqmi_cci",
                 "libqmi_encdec",
-                "libprotobuf-cpp-full-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libhardware",
                 "libqdMetaData",
                 "libcamera_metadata",
@@ -3616,13 +3777,13 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libarcsoft_beauty_picselfie.so",
             ],
             shared_libs: [
+                "libdl",
                 "libarcsoft_picselfie_algorithm",
                 "libmpbase",
                 "liblog",
                 "libGLESv2",
                 "libc",
                 "libm",
-                "libdl",
             ],
         },
     },
@@ -4164,9 +4325,64 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "libutils",
-                "libQSEEComAPI",
-                "libion",
                 "liblog",
+                "libQSEEComAPI",
+                "libfpsph",
+                "libion",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libfpsph",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libfpsph.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libhidlbase",
+                "vendor.lge.hardware.powerhint.rescontrol@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libnanopb",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libnanopb.so",
+            ],
+            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -4193,10 +4409,39 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libssc",
                 "liblog",
-                "libprotobuf-cpp-full-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libsensorslog",
                 "libutils",
                 "libcutils",
+                "libsnsapi",
+                "libnanopb",
+                "libsns_api",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsns_api",
+    owner: "lge",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsns_api.so",
+            ],
+            shared_libs: [
+                "libnanopb",
+                "libqmi_common_so",
                 "libc++",
                 "libc",
                 "libm",
@@ -4417,15 +4662,6 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libcvpdsp_skel",
-    filename: "libcvpdsp_skel.so",
-    owner: "lge",
-    src: "proprietary/vendor/lib/rfsa/adsp/libcvpdsp_skel.so",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
     name: "libdspCV_skel",
     filename: "libdspCV_skel.so",
     owner: "lge",
@@ -4484,15 +4720,6 @@ prebuilt_rfsa {
     filename: "libhexagon_nn_skel.so",
     owner: "lge",
     src: "proprietary/vendor/lib/rfsa/adsp/libhexagon_nn_skel.so",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
-    name: "libscveBlobDescriptor_skel",
-    filename: "libscveBlobDescriptor_skel.so",
-    owner: "lge",
-    src: "proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so",
     relative_install_path: "adsp",
     soc_specific: true,
 }
@@ -4599,6 +4826,75 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "android.hardware.nfc@1.2-service-cxd22xx",
+    owner: "lge",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service-cxd22xx",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libhardware",
+                "liblog",
+                "libutils",
+                "android.hardware.nfc@1.0",
+                "android.hardware.nfc@1.1",
+                "android.hardware.nfc@1.2",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.lge.hardware.powerhint.rescontrol@2.0-service",
+    owner: "lge",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.lge.hardware.powerhint.rescontrol@2.0-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhardware",
+                "libhidlbase",
+                "vendor.lge.hardware.powerhint.rescontrol@2.0",
+                "vendor.lge.hardware.powerhint.rescontrol@2.0-common",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "vendor.qti.hardware.sensorscalibrate@1.0-service",
     owner: "lge",
     target: {
@@ -4612,7 +4908,6 @@ cc_prebuilt_binary {
                 "libbase",
                 "libutils",
                 "libhidlbase",
-                "libhidltransport",
                 "vendor.qti.hardware.sensorscalibrate@1.0",
                 "libc++",
                 "libc",
@@ -4639,12 +4934,13 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/sensors.qti",
             ],
             shared_libs: [
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
                 "libdiag",
                 "libssc",
-                "libprotobuf-cpp-full-vendorcompat",
                 "libsensorslog",
                 "libcutils",
+                "libsnsapi",
                 "libc++",
                 "libc",
                 "libm",
@@ -4683,4 +4979,25 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+}
+
+install_symlink {
+    name: "vendor_firmware_wlan_qca_cld_bdwlan_bin",
+    soc_specific: true,
+    installed_location: "firmware/wlan/qca_cld/bdwlan.bin",
+    symlink_target: "/vendor/etc/wifi/bdwlan.bin",
+}
+
+install_symlink {
+    name: "vendor_firmware_wlan_qca_cld_bdwlan_ch0_bin",
+    soc_specific: true,
+    installed_location: "firmware/wlan/qca_cld/bdwlan_ch0.bin",
+    symlink_target: "/vendor/etc/wifi/bdwlan_ch0.bin",
+}
+
+install_symlink {
+    name: "vendor_firmware_wlan_qca_cld_bdwlan_ch1_bin",
+    soc_specific: true,
+    installed_location: "firmware/wlan/qca_cld/bdwlan_ch1.bin",
+    symlink_target: "/vendor/etc/wifi/bdwlan_ch1.bin",
 }
